@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap'); /* font-family: 'Poppins', sans-serif; (200-300-400-500-600) */
+
+:root {
+    --black: #222220;
+    --cream: #DEB8AB;
+    --dark-cream: #E4A691;
+    --brown: #A17668;
+    --white: #fff;
+    --pink: rgb(199, 69, 171);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #222220;
+}
+
+/* Header */
+.container-header {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+/* Navegacion */
+.container-nav {
+    background-color: var(--black);
+    height: 100vh;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10vh;
+}
+
+.nav__picture {
+    justify-self: start;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.nav__item {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 2.8vh;
+}
+
+.nav__item:hover {
+    text-decoration: underline;
+}
+
+.nav-img {
+    width: 100%;
+    height: 40vh;
+    max-width: 100%;
+}
+
+/* Hero */
+.header__picture {
+    width: 75%;
+    height: 100vh;
+    overflow: hidden;
+    border-radius: 0 0 0 15%;
+    border-bottom: 1px solid var(--dark-cream);
+    border-left: 1px solid var(--dark-cream);
+}
+
+.header__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* Main */
+
+.container-catalogos {
+    width: 80%;
+    height: 100rem;
+    padding-top: 8rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10rem 50rem;
+    column-gap: 5rem;
+    row-gap: 5.5rem;
+}
+
+.container-h2 {
+    grid-column: 1 / span 3;
+    margin: 0;
+    align-self: center;
+    justify-self: center;
+    font-size: 5.5rem;
+    color: var(--cream);
+    text-decoration: underline;
+}
+
+.catalogo__img {
+    width: 100%;
+    height: 35vw;
+    border: 1px solid var(--cream);
+    border-radius: 5rem 0 5rem 0;
+}
+
+.container-buttons {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btn {
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 1.5rem 2.5rem;
+    border: 1px solid var(--cream);
+    border-radius: 3rem;
+}
+.btn-view {
+    background-color: var(--black);
+    color: var(--cream);
+}
+
+.btn-download {
+    background-color: #222220;
+    color: var(--cream);
+}
+
+.btn:hover {
+    color: var(--brown);
+    border-color: var(--brown);
+}
